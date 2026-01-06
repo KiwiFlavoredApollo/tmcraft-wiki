@@ -101,9 +101,9 @@ class TMBlock extends PokeMoves {
             case "berries": maxLoop = 70; break;
 
             // For item that already in their tag
-            case "enigma_berry":
+            case "enigma_berry": otherURL = "images/berries_2.png"; break;
             case "figy_berry": otherURL = "images/berries_3.png"; break;
-            case "pink_petals": otherURL = "images/berries_2.png"; break;
+            case "pink_petals": otherURL = "images/flowers/flowers_23.png"; break;
             case "wither_rose": otherURL = "images/small_flowers_12.png"; break;
 
             // Animated Texture
