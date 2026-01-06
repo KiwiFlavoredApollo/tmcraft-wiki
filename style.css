@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    background-color: #313131;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    margin: 0;
+    color: white;
+}
+
+.layout {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.sideNavigate {
+    position: relative;
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+}
+.side {
+    position: fixed;
+    -ms-flex: 15%; /* IE10 */
+    flex: 15%;
+}
+.side::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    transform: translateY(-45%);
+    width: 3%;
+    height: 200%;
+    background: #7f7f7f;
+}
+
+/* Style the navigation links */
+.side a, .side span {
+    color: white;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 7% 0px;
+    width: 100%;
+    text-decoration: none;
+}
+/* Change color on hover */
+.side a:hover {
+    background-color: #ffffff70;
+    color: black;
+}
+
+.main {
+    -ms-flex: 80%; /* IE10 */
+    flex: 80%;
+}
+.main h1, .main h2, .main input, .main .table-container, .main p{
+    text-align: justify;
+    margin-right: 5%;
+}
+.title {
+    position: relative;
+    padding: 15%;
+    padding-top: 0%;
+    padding-bottom: 5%;
+    text-align: center;
+    /* border-bottom: 10px solid #7f7f7f; */
+}
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 6%;
+    background: #7f7f7f;
+}
+.title a:hover{
+    background-color: unset;
+    color: white;
+}

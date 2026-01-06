@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TMCraft Wiki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="crafting.css">
+        <style>
+            table, td, th {
+                text-align: center;
+                border: 1px solid;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                padding-left: 2.5%;
+                padding-right: 3%;
+            }
+            table {
+                border-collapse: collapse;
+                margin: 25px 0;
+                width: 95%;
+            }
+            .discs td {
+                min-width: 132px;
+            }
+            .discs td:nth-of-type(1){
+                min-width: 300px;
+            }
+            .discs td:nth-of-type(2){
+                padding-top: 3%;
+                padding-bottom: 3%;
+                min-width: 320px;
+            }
+            .interface {
+                margin: 0 auto;
+            }
+            .contents td {
+                text-align: justify;
+            }
+            .contents td:nth-of-type(1) {
+                text-align: center;
+                min-width: 17%;
+                padding: 2%;
+            }
+            code {
+                color: white;
+                background-color: black;
+                padding: 0.2%;
+                padding-left: 0.6%;
+                padding-right: 0.6%;
+                border-radius: 8px;
+                font-size: 105%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="layout">
+
+            <div class="sideNavigate"></div>
+            <div class="side">
+                <h1 class="title"><span>TMCraft Wiki</span></h1>
+                <a href="./tm/tm.html">TM Crafting Recipes</a>
+                <a href="./tutor/tutor.html">Tutor Move Trades</a>
+                <a href="./egg/egg.html">Egg Move Trades</a>
+            </div>
+
+            <div class="main">
+                <h1>About TMCraft</h1><p>TMCraft is a Cobblemon side mod that add TMs with recipes. Mods like EMI is highly recommended for viewing recipes. This mod is not a unique work of mine and heavily motivated by SimpleTMs made by Dragomordor. Most of the heavy lifting is done by Dragomordor.</p>
+                <p>Here are few things different from SimpleTMs.</p>
+                <ul>
+                    <li>Removed feature wild Pokémon dropping TMs when fainted</li>
+                    <li>Replaced TM textures with those based on Cobblemon Assets</li>
+                </ul>
+                <p>By the term TM, the mod follows Gen IX. Which means TMs are consumed after being used. Pokémon will not be able to learn egg moves and tutor moves with TMs.</p>
+
+                <h2>Recipes</h2>
+                <ul><p>As of 1.4.2, all TM recipes for all generation have been added.</p>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1dSF5yGApMBniT_dNG_7rBsOzZgVQqpY8qVZWKixdT1Y/edit?usp=sharing">TM Recipe Progress - Google Spreadsheet</a></li>
+                    <li><a href="TMCraft Missing Recipes">TMCraft Missing Recipes</a></li>
+                </ul>
+                <p>TMCraft Missing Recipes is a data pack that adds recipes which are not meant to be included in the mod. Server admins can use this as a template.</p>
+                <p>If your favorite TMs do not have recipes and if you have an idea, feel free to contact me and give suggestions.</p>
+                <p><code>norecipe</code> version is no longer provided.</p>
+
+                <details>
+                    <summary style="font-size: 150%;"><b>Blank Discs</b></summary>
+                    <p>Blank Discs are used as ingredients for crafting TMs. <code>Move Upgrade Smithing Template</code> is used when upgrading tiers. It can also be craft or duplicate.</p>
+                    <p>Starting from <code>1.3.0</code>, Move Upgrade Smithing Template replaces Netherite Upgrade Smithing Template.</p>
+                    <table class="discs">
+                        <tbody>
+                            <tr>
+                                <th>Disc Type</th>
+                                <th>Crafting Recipe</th>
+                                <th colspan="2">Power Value</th>
+                            </tr>
+                            <tr>
+                                <td><b>Copper Blank Disc</b></td>
+                                <td>
+                                    <div class="interface crafting-interface">
+                                        <div class="crafting-interface-ingredients">
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"></div>
+                                            <div class="item-slot"></div>
+                                            <div class="item-slot"></div>
+                                            </div>
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"></div>
+                                            <div class="item-slot"><img src="/images/items/copper_blank_disc.png"><span class="item-tooltip">Copper Ingot</span></div>
+                                            <div class="item-slot"></div>
+                                            </div>
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"></div>
+                                            <div class="item-slot"></div>
+                                            <div class="item-slot"></div>
+                                            </div>
+                                        </div>
+                                        <div class="crafting-interface-result">
+                                            <div class="item-slot item-slot-large"><img src="/images/items/copper_blank_disc.png"><span class="item-tooltip">Copper Blank Disc</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>0</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <td><b>Iron Blank Disc</b></td>
+                                <td>
+                                    <div class="interface smithing-interface">
+                                        <div class="smithing-interface-ingredients">
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"><img src="/images/items/move_upgrade_smithing_template.png"><span class="item-tooltip">Move Upgrade Smithing Template</span></div>
+                                            <div class="item-slot"><img src="/images/items/copper_blank_disc.png"><span class="item-tooltip">Copper Blank Disc</span></div>
+                                            <div class="item-slot"><img src="/images/items/iron_ingot.png"><span class="item-tooltip">Iron Ingot</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="smithing-interface-result">
+                                            <div class="item-slot"><img src="/images/items/iron_blank_disc.png"><span class="item-tooltip">Iron Blank Disc</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>30</td>
+                                <td>59</td>
+                            </tr>
+                            <tr>
+                                <td><b>Gold Blank Disc</b></td>
+                                <td>
+                                    <div class="interface smithing-interface">
+                                        <div class="smithing-interface-ingredients">
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"><img src="/images/items/move_upgrade_smithing_template.png"><span class="item-tooltip">Move Upgrade Smithing Template</span></div>
+                                            <div class="item-slot"><img src="/images/items/iron_blank_disc.png"><span class="item-tooltip">Iron Blank Disc</span></div>
+                                            <div class="item-slot"><img src="/images/items/gold_ingot.png"><span class="item-tooltip">Gold Ingot</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="smithing-interface-result">
+                                            <div class="item-slot"><img src="/images/items/gold_blank_disc.png"><span class="item-tooltip">Gold Blank Disc</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>60</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td><b>Diamond Blank Disc</b></td>
+                                <td>
+                                    <div class="interface smithing-interface">
+                                        <div class="smithing-interface-ingredients">
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"><img src="/images/items/move_upgrade_smithing_template.png"><span class="item-tooltip">Move Upgrade Smithing Template</span></div>
+                                            <div class="item-slot"><img src="/images/items/gold_blank_disc.png"><span class="item-tooltip">Gold Blank Disc</span></div>
+                                            <div class="item-slot"><img src="/images/items/diamond.png"><span class="item-tooltip">Diamond</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="smithing-interface-result">
+                                            <div class="item-slot"><img src="/images/items/diamond_blank_disc.png"><span class="item-tooltip">Diamond Blank Disc</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>90</td>
+                                <td>119</td>
+                            </tr>
+                            <tr>
+                                <td><b>Netherite Blank Disc</b></td>
+                                <td>
+                                    <div class="interface smithing-interface">
+                                        <div class="smithing-interface-ingredients">
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"><img src="/images/items/move_upgrade_smithing_template.png"><span class="item-tooltip">Move Upgrade Smithing Template</span></div>
+                                            <div class="item-slot"><img src="/images/items/diamond_blank_disc.png"><span class="item-tooltip">Diamond Blank Disc</span></div>
+                                            <div class="item-slot"><img src="/images/items/netherite_ingot.png"><span class="item-tooltip">Netherite Ingot</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="smithing-interface-result">
+                                            <div class="item-slot"><img src="/images/items/netherite_blank_disc.png"><span class="item-tooltip">Netherite Blank Disc</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td colspan="2">120+</td>
+                            </tr>
+                            <tr>
+                                <td><b>Emerald Blank Disc</b></td>
+                                <td>
+                                    <div class="interface smithing-interface">
+                                        <div class="smithing-interface-ingredients">
+                                            <div class="item-slot-row">
+                                            <div class="item-slot"><img src="/images/items/move_upgrade_smithing_template.png"><span class="item-tooltip">Move Upgrade Smithing Template</span></div>
+                                            <div class="item-slot"><img src="/images/items/gold_blank_disc.png"><span class="item-tooltip">Gold Blank Disc</span></div>
+                                            <div class="item-slot"><img src="/images/items/emerald.png"><span class="item-tooltip">Emerald</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="smithing-interface-result">
+                                            <div class="item-slot"><img src="/images/items/emerald_blank_disc.png"><span class="item-tooltip">Emerald Blank Disc</span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td colspan="2">(for status moves)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+                </br>
+                <details>
+                    <summary style="font-size: 150%;"><b>Table of Content</b></summary>
+                    <table class="contents">
+                        <tbody>
+                            <tr>
+                                <th>Content</th>
+                                <th colspan="2">Description</th>
+                            </tr>
+                            <tr>
+                                <td>TM Move Items</td>
+                                <td colspan="2">TM Move Items teach moves that are learned by using TMs.</td>
+                            </tr>
+                            <tr>
+                                <td>Egg Move Items</td>
+                                <td colspan="2">Egg Move Items teach moves that are learned via breeding.</br>Pokémon Breeder villagers sell Egg Move Items. (>=1.4.6)</td>
+                            </tr>
+                            <tr>
+                                <td>Tutor Move Items</td>
+                                <td colspan="2">Tutor Move Items teach moves that are learned by Move Tutors.</br>Move Tutor villagers sell Tutor Moves Items. (>=1.4.4)</td>
+                            </tr>
+                            <tr>
+                                <td>Star Move Items</td>
+                                <td colspan="2">Star Move Items teach moves even if the Pokémon are not supposed to learn them. These are basically cheating so use them at your own risk. With great power comes great responsibility.</td>
+                            </tr>
+                            <tr>
+                                <td>Move Recorders</td>
+                                <td colspan="2">When used, Move Recorder converts to corresponding TM/Egg/Tutor/Star move item.</td>
+                            </tr>
+                            <tr>
+                                <td>Game Rule</td>
+                                <td style="padding: 2%; min-width: 20%; text-align: center;"><code style="padding: 1%;padding-left: 2.5%;padding-right: 2.5%;">consumeMoveItemOnUse</code></td>
+                                <td>If set to <code>true</code> (default), Move Items are consumed when used. Affects globally to TM Move Items, Egg Move Items, Tutor Move Items and Star Move Items.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
+
+                <h1>LICENSE</h1>
+                <ul>
+                    <li><b>Source code</b>: GPL 3.0</li>
+                    <li><b>Assets</b>: CC BY-NC-SA 4.0 International</li>
+                </ul>
+
+                <h2>Translation</h2>
+                <p>Voldir (French)</p>
+
+                <h1>Credits</h1>
+                <ul>
+                    <li><a href="https://modrinth.com/mod/simpletms-tms-and-trs-for-cobblemon">SimpleTMs</a></li>
+                    <li><a href="https://modrinth.com/mod/cobblemon">Cobblemon</a> Assets</li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>

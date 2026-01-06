@@ -1,0 +1,56 @@
+{
+    "novice": [
+        "fake-out",
+        "twister",
+        "dual-chop",
+        "bind",
+        "zippy-zap",
+        "terrain-pulse"
+    ],
+    "apprentice": [
+        "feint-attack",
+        "ominous-wind",
+        "sucker-punch",
+        "ancient-power",
+        "signal-beam",
+        "relic-song",
+        "secret-sword",
+        "covet",
+        "rising-voltage",
+        "knock-off"
+    ],
+    "journeyman": [
+        "aqua-tail",
+        "floaty-fall",
+        "splishy-splash",
+        "bouncy-bubble",
+        "buzzy-buzz",
+        "sizzly-slide",
+        "baddy-bad",
+        "sappy-seed",
+        "freezy-frost",
+        "sparkly-swirl",
+        "glitzy-glow"
+    ],
+    "expert": [
+        "hypnosis",
+        "role-play",
+        "magnet-rise",
+        "synthesis",
+        "gastro-acid",
+        "block",
+        "heal-bell",
+        "magic-coat",
+        "string-shot",
+        "worry-seed",
+        "after-you",
+        "laser-focus",
+        "corrosive-gas"
+    ],
+    "master": [
+        "last-resort",
+        "dragon-ascent",
+        "volt-tackle",
+        "steel-roller"
+    ]
+}

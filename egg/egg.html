@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TMCraft Wiki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../trading.css">
+    </head>
+
+    <body>
+        <div class="layout">
+            
+            <div class="sideNavigate"></div>
+            <div class="side">
+                <h1 class="title"><a href="../index.html">TMCraft Wiki</a></h1>
+                <a href="../tm/tm.html">TM Crafting Recipes</a>
+                <a href="../tutor/tutor.html">Tutor Move Trades</a>
+                <span><u>Egg Move Trades</u></span>
+            </div>
+            <div class="main" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap;">
+                <div class="mid-side">
+                    <h1>Tutor Moves</h1>
+                    <p>From TMCraft 1.4.6 onward, Pokémon Breeder villagers has been added and trade Egg Moves Items.</br>Their job site block is the Pokémon Breeder Table.</p>
+                    <!-- Tutor Table Crafting Recipe here -->
+
+                    <section>
+                        <form>
+                            <input type="text" id="search" placeholder="Search for Tutor Move trade...">
+                        </form>
+                        <table class="trading-table" id="trading-table">
+                            <tr>
+                                <th style="width: 13%;">Level</th>
+                                <th style="width: 9%;">Chance</th>
+                                <th style="width: 21%;">Item wants</th>
+                                <th style="width: 33%;">Recieves</th>
+                                <th style="width: 11%; border-right: 0px; padding-left: 2%;">Type</th>
+                                <th style="width: 2%; border-left: 0px; border-right: 0px;">Power</th>
+                                <th style="width: 7%; border-left: 0px; border-right: 0px;">Acc.</th>
+                                <th style="width: 4%; border-left: 0px; padding-right: 2%;">PP.</th>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
+                <div class="right-side">
+                    <img src="images/pokemonbreeder.png" style="width: 80%; position: relative; margin: 10%; margin-top: 65%;">
+                </div>
+            </div>
+
+        </div>
+        <script type="module" src="trade.js"></script>
+    </body>
+</html>

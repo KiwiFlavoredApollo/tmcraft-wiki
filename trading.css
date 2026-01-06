@@ -1,0 +1,41 @@
+.mid-side {
+    -ms-flex: 80%; /* IE10 */
+    flex: 80%;
+}
+.right-side {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+}
+input {
+    position: relative;
+    display: block;
+    margin : 10 auto;
+    font-size: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    border: 0.25cap solid #7f7f7f;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+input:focus {
+    outline: none;
+}
+table, td, th {
+    image-rendering: pixelated;
+    text-align: center;
+    border: 1px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+img {
+    vertical-align: bottom;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:nth-of-type(even) td {
+    background-color: #4d4d4d;
+}

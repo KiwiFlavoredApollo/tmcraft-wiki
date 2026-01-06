@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Lexend:400&display=swap);@font-face {
+    font-family: "Minecraft";
+    src: url(Minecraft.otf)
+}
+.crafting-interface{
+    height:130px;
+    width:257px;
+    background-image:url(./images/arrow.png);
+    background-position:137px 46px
+}
+.interface .item-slot-row{
+    display:flex;
+    flex-direction:row
+}
+.interface .item-slot,
+.infobox .item-slot{
+    background:var(--background-color);
+    border-radius:2px;
+    margin:2px
+}
+.item-slot{
+    position:relative;
+    width:32px;
+    height:32px;
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+.item-slot img{
+    width:32px !important;
+    height:32px !important;
+    image-rendering:pixelated
+}
+.smithing-interface{
+    height:50px;
+    width:241px;
+    background-image:url(./images/arrow.png);
+    background-position:137px 8px
+}
+.item-tooltip{
+    display:none;
+    font-family:Minecraft;
+    font-size:18px;
+    letter-spacing:-0.3px;
+    text-shadow:2px 2px #3E3E3E;
+    color:#FCFCFC;
+    background-color:rgba(16,1,16,0.95);
+    padding-inline:4px;
+    border:2px solid rgba(35,0,90,0.95);
+    outline:2px solid rgba(16,1,16,0.95)
+    ;border-radius:2px;
+    line-height:24px;
+    position:absolute;
+    width:max-content;
+    bottom:-26px;z-index:1;
+    pointer-events:none
+}
+.item-slot:hover .item-tooltip{
+    display:block
+}
+.interface{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#C6C6C6;
+    border:2px solid;
+    border-color:#FFF #555 #555 #FFF;
+    outline:2px solid #000;
+    padding:8px;
+    margin-block:20px;
+    image-rendering:pixelated;
+    position:relative;
+    background-repeat:no-repeat;
+    box-sizing:border-box
+}
+.interface .shapeless-mark{
+    color:#8b8b8b;
+    font-size:28px;
+    bottom:0px;
+    left:120px;
+    position:absolute;
+    cursor:help
+}
+.interface .item-slot-row {
+    display:flex;
+    flex-direction:row
+}
+.interface .item-slot,
+.interface .item-slot-large {
+    box-sizing:border-box;
+    width:36px;
+    height:36px;
+    border:2px solid;
+    border-color:#373737 #FFF #FFF #373737;
+    background-color:#8B8B8B
+}
+.interface .item-slot-large {
+    width:52px;
+    height:52px
+}
+.interface .item-slot-count{
+    font-family:"Minecraft";
+    font-size:18px;
+    letter-spacing:-0.3px;
+    color:#FFF;
+    text-shadow:2px 2px #3F3F3F;
+    position:absolute;
+    right:6px;
+    bottom:-2px;
+    z-index:2;
+    pointer-events:none
+}
+.interface .item-slot:hover::after,
+.interface .item-slot-large:hover::after{
+    content:"";
+    width:32px;
+    height:32px;
+    background-color:rgba(255,255,255,.5);
+    position:absolute;
+    pointer-events:none
+}
+.image-sequence .image-sequence-group {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+.table-container {
+    position: relative;
+    display: block;
+    margin : 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.5%;
+    width: 100%;
+}

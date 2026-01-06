@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TMCraft Wiki</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <style>
+            p {
+                padding: 2%;
+                width: 97%;
+                font-size: 120%;
+                position: relative;
+                display: block;
+                margin : 0 auto;
+            }
+            input {
+                position: relative;
+                display: block;
+                margin : 10 auto;
+                font-size: 180%;
+                font-family: sans-serif;
+                font-weight: bold;
+                width: 95%;
+                border: 0.25cap solid #7f7f7f;
+                border-radius: 100px;
+                padding: 1%;
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+            input:focus {
+                outline: none;
+            }
+            .table-container {
+                padding-top: 2%;
+            }
+        </style>
+        <link rel="stylesheet" href="../crafting.css">
+    </head>
+
+    <body>
+        <div class="layout">
+
+            <div class="sideNavigate"></div>
+            <div class="side">
+                <h1 class="title"><a href="../index.html">TMCraft Wiki</a></h1>
+                <span><u>TM Crafting Recipes</u></span>
+                <a href="../tutor/tutor.html">Tutor Move Trades</a>
+                <a href="../egg/egg.html">Egg Move Trades</a>
+            </div>
+            <div class="main">
+                <p><b>Note:</b> If you don't find a TM recipe you need, it is unlikely that TM exist in the offcial pokémon games. You will have to create your own datapack for that TM recipe if you really want it.</p>
+                <section>
+                    <form>
+                        <input type="text" id="search" placeholder="Search for TM Recipe...">
+                    </form>
+                    <div class="table-container" id="tm-list"></div>
+                </section>
+            </div>
+
+        </div>
+        
+        <script type="module" src="./recipe_lookup.js"></script>
+        <script>
+        </script>
+    </body>
+</html>
